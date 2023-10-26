@@ -1,0 +1,35 @@
+.home {
+  height: 100%;
+  padding-top: 25vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("../img/home.webp") center;
+
+  background-size: cover;
+
+  &-name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &-last {
+      color: $secondary-color;
+      font-weight: 700;
+
+      &::before {
+        content: "\00D0";
+      }
+      &::after {
+        content: "\0107";
+      }
+    }
+  }
+
+}
